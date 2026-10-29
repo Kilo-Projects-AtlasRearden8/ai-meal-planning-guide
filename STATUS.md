@@ -26,7 +26,7 @@ A beginner-friendly manual for using free AI tools to plan weekly meals, publish
   - `templates/weekly-meal-plan.html` — printer-friendly weekly planner + pantry + grocery + budget tracker
   - `templates/grocery-list.html` — printer-friendly sectioned grocery list
 - `tests/verify.js` — Node verification script (file existence, LICENSE text, README credit, secret scanning, HTML/Markdown link integrity)
-- Git initialized, one commit (`361f2cb`), working tree clean. Nothing pushed, no remote created.
+- Git initialized, three commits on branch `master` (root `361f2cb`, latest `42c551c`), working tree clean. Nothing pushed, no remote created.
 
 ## How to run it
 
@@ -37,12 +37,12 @@ A beginner-friendly manual for using free AI tools to plan weekly meals, publish
 
 ## Verification results
 
-Ran `node tests/verify.js` — result: **✔ All checks passed. No errors, no warnings.**
+Ran `node tests/verify.js` — result: **✔ All checks passed. No errors, no warnings.** (re-run after README improvement; still clean.)
 
 Checks performed:
 - All required files exist (LICENSE, README.md, 10 docs, 10 site pages, CSS, JS, 2 templates)
 - LICENSE contains exact line `Copyright (c) 2026 Asdale Dynamics, LLC`
-- README.md credits Asdale Dynamics, LLC
+- README.md credits Asdale Dynamics, LLC (improved with warmer brand voice, who-this-is-for, and medical disclaimer)
 - No `.github/workflows` directory present
 - No secrets, API keys, or private-key patterns detected in scanned files
 - All `href` links in HTML files resolve to existing files
@@ -61,4 +61,4 @@ An initial link issue in `docs/index.md` (paths prefixed with `docs/` from insid
 
 ## Commit
 
-One commit on branch `master` (root commit `361f2cb`), plain message, no Co-authored-by trailer, not pushed, no remote.
+Three commits on branch `master` (root `361f2cb`, latest `42c551c`), plain messages, no Co-authored-by trailer, not pushed, no remote.
