@@ -1,0 +1,215 @@
+/* AI Meal Planning Guide — site styles
+   Copyright (c) 2026 Asdale Dynamics, LLC. MIT License. */
+
+/* Design tokens */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --text: #2a2a2e;
+  --muted: #6b6b73;
+  --accent: #4a6fa5;
+  --accent-hover: #3a5a85;
+  --border: #d8d4c8;
+  --soft-bg: #f2efe6;
+  --ink: #1f1f23;
+  --max-width: 760px;
+}
+
+/* Reset & base */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand:hover { text-decoration: none; color: var(--accent); }
+.brand-emoji { font-size: 1.25rem; }
+.tagline {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+.credit {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+/* Navigation */
+.nav-wrap {
+  border-top: 1px solid var(--border);
+}
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  overflow-x: auto;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+.nav-list li a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.nav-list li a:hover, .nav-list li a.active {
+  background: var(--soft-bg);
+  color: var(--accent);
+  border-color: var(--border);
+  text-decoration: none;
+}
+
+/* Main layout */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+section { margin-bottom: 2.5rem; }
+
+/* Typography */
+h1 { font-size: 1.75rem; margin: 0 0 0.75rem; color: var(--ink); }
+h2 { font-size: 1.25rem; margin: 1.5rem 0 0.75rem; color: var(--ink); }
+h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; color: var(--ink); }
+p { margin: 0 0 1rem; }
+ul, ol { margin: 0 0 1rem 1.25rem; padding-left: 1.25rem; }
+li { margin-bottom: 0.35rem; }
+strong { color: var(--ink); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.9em; background: var(--soft-bg); padding: 0.15rem 0.35rem; border-radius: 4px; color: var(--ink); }
+pre { background: var(--soft-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+pre code { background: transparent; padding: 0; color: var(--ink); }
+
+/* Lead paragraph */
+.lead { font-size: 1.05rem; color: #444; }
+
+/* Try this boxes */
+.try-box {
+  background: #eef4fb;
+  border: 1px solid #c9d8e6;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.try-box h3 { margin-top: 0; color: var(--accent); font-size: 1rem; }
+.try-box p { margin: 0.4rem 0; }
+.try-box pre { margin: 0.5rem 0 0; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+th { background: var(--soft-bg); font-weight: 700; color: var(--ink); }
+
+/* Disclaimer / callout */
+.callout {
+  background: #fdf6ec;
+  border: 1px solid #e3d7bd;
+  border-left: 4px solid #c9a227;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+}
+.callout h3 { margin-top: 0; color: #8a6d1b; font-size: 1rem; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 2rem 1.25rem 3rem;
+  margin-top: 2rem;
+}
+.footer-inner { max-width: var(--max-width); margin: 0 auto; }
+.footer-inner p { margin: 0.35rem 0; font-size: 0.9rem; color: var(--muted); }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  background: var(--soft-bg);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* Print templates */
+.print-page {
+  max-width: 100%;
+  padding: 0;
+}
+.print-page body { background: #fff; }
+.print-grid { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.print-grid th, .print-grid td {
+  border: 1px solid #000;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.print-grid th { background: #eee; font-weight: 700; }
+.print-section { margin-bottom: 1.5rem; page-break-inside: avoid; }
+.print-section h3 { margin-top: 0; font-size: 1.1rem; border-bottom: 2px solid #000; padding-bottom: 0.25rem; }
+.print-field { margin-bottom: 0.45rem; font-size: 0.95rem; }
+.print-field b { color: #000; }
+.print-hairline { height: 1px; background: #000; margin: 0.75rem 0; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  .nav-list { gap: 0.35rem; }
+  .nav-list li a { padding: 0.35rem 0.6rem; font-size: 0.8rem; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  a { color: #000; text-decoration: none; }
+  .site-header, .site-footer, .nav-wrap { display: none !important; }
+  main { padding: 0; max-width: 100%; }
+  .try-box { background: #fff; border-color: #000; page-break-inside: avoid; }
+  .callout { background: #fff; border-color: #000; page-break-inside: avoid; }
+  table { page-break-inside: auto; }
+  tr { page-break-inside: avoid; }
+}

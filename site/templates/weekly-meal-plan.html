@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Meal Planner (Printable) — AI Meal Planning Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  @page { size: Letter; margin: 18mm; }
+  body { font-size: 10pt; padding: 0; max-width: none; margin: 0; background: #fff; }
+  header.site-header, nav.nav-wrap, footer.site-footer, .no-print { display: none !important; }
+  main { padding: 0; max-width: none; }
+  h1 { font-size: 17pt; margin-bottom: 0.4rem; text-align: center; }
+  h2 { font-size: 12pt; margin-top: 1.2rem; border-bottom: 2px solid #000; padding-bottom: 0.2rem; }
+  .subtitle { text-align: center; color: #444; font-size: 9.5pt; margin-bottom: 1rem; }
+  table.print-grid { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+  table.print-grid th, table.print-grid td { border: 1px solid #000; padding: 0.55rem 0.75rem; text-align: left; font-size: 9.5pt; }
+  table.print-grid th { background: #eee; font-weight: 700; }
+  .print-field { margin-bottom: 0.45rem; font-size: 9.5pt; line-height: 1.4; }
+  .print-field b { color: #000; }
+  .instructions { font-size: 8.5pt; color: #444; margin-top: 0.8rem; border-top: 1px solid #000; padding-top: 0.4rem; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<main>
+<h1>Weekly Meal Planner</h1>
+<p class="subtitle">AI Meal Planning Guide &bull; Copyright (c) 2026 Asdale Dynamics, LLC &bull; MIT License<br>
+Plan your week from pantry ingredients. See docs/07-printable-templates.md for how to use.</p>
+
+<h2>Weekly meal planner</h2>
+<table class="print-grid">
+  <thead>
+    <tr><th>Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th><th>Snacks</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td style="height:44px;">Monday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Tuesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Wednesday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Thursday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Friday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Saturday</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:44px;">Sunday</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<div class="instructions">
+  <strong>How to use:</strong> List your pantry ingredients first. Ask a free AI tool for a menu (see the guide, Prompt 1). Write each dinner in the grid, mark leftover nights, and keep it on the fridge.
+</div>
+
+<h2 style="page-break-before: always;">Pantry inventory</h2>
+<div class="print-field"><b>Proteins:</b> _______________________________________________</div>
+<div class="print-field"><b>Grains (rice, pasta, bread, oats):</b> __________________________</div>
+<div class="print-field"><b>Canned &amp; jarred:</b> _________________________________________</div>
+<div class="print-field"><b>Frozen:</b> ________________________________________________</div>
+<div class="print-field"><b>Fresh (use first):</b> _______________________________________</div>
+<div class="print-field"><b>Spices &amp; basics (oil, salt, pepper):</b> _________________________</div>
+<p style="font-size:8.5pt; color:#444;">Update this once a week before you plan meals.</p>
+
+<h2>Grocery list (by store section)</h2>
+<div class="print-field"><b>Produce:</b> ________________________________________________</div>
+<div class="print-field"><b>Meat / protein:</b> _________________________________________</div>
+<div class="print-field"><b>Dairy &amp; eggs:</b> __________________________________________</div>
+<div class="print-field"><b>Canned &amp; jarred:</b> ________________________________________</div>
+<div class="print-field"><b>Dry goods / grains:</b> ______________________________________</div>
+<div class="print-field"><b>Frozen:</b> ________________________________________________</div>
+<div class="print-field"><b>Bakery:</b> ________________________________________________</div>
+<div class="print-field"><b>Other:</b> _________________________________________________</div>
+<div class="print-field"><b>Estimated total:</b> $________</div>
+
+<h2>Budget tracker</h2>
+<table class="print-grid">
+  <thead><tr><th>Week starting</th><th>Grocery budget</th><th>Actual spent</th><th>Under / over</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td style="height:26px;"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:26px;"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:26px;"></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td style="height:26px;"></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+</main>
+</body>
+</html>
